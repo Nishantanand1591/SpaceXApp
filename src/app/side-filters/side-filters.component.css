@@ -1,0 +1,41 @@
+.main{
+    padding: 0px 10px 0px 10px;
+    background-color: #fff;
+    width: 15%;
+    border: none;
+    margin-top: 15px;
+    max-height: 600px;
+    min-height: 600px;
+    position: absolute;
+}
+.filterLabel{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.labelYear{
+    text-align: center;
+    border-bottom: .5px solid #b1b0b0;
+}
+
+
+.square_btn{
+    padding: 0.5em 1em;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    text-decoration: none;
+    background: #3cd432;
+    border: none;
+    border-radius: 10px;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.square_btn:active {/*on Click*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*Move down*/
+    border-bottom: none;/*disappears*/
+}
+
+.btnColumn{
+    text-align: center;
+}

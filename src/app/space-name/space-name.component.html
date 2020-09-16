@@ -1,0 +1,32 @@
+<div class="content" role="main">
+<ng-container *ngIf = "elementData?.length > 0 && isLoading">
+  <div class="card-container">
+    <ng-container *ngFor="let item of elementData; let i = index">
+      <div class="card">
+        <div class="imageClass">
+          <img src="{{item.links.mission_patch_small}}">
+        </div>
+        <div class="details">
+          <p class="missionName">{{item.mission_name}}</p>
+          <div class="alignText">
+            <p class="labelMission">Mission Id</p>
+            <ul *ngFor="let mId of item.mission_id; let mI = index">
+              <li>
+                {{mId}}
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="labelMission">Launch Year : <span class="year">{{item.launch_year}}</span></p>
+            <p class="labelMission">Sucessfull Launch : <span class="year">{{item.launch_success}}</span></p>
+            <span *ngFor="let land of item.rocket.first_stage.cores; let lI = index">
+              <p class="labelMission">Sucessfull Landing : <span class="year">{{land.land_success}}</span></p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</ng-container>
+  
+</div>

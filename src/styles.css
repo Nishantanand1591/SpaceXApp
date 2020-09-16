@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+
+.heading{
+    font-size: 1.5rem;
+    font-family: revert;
+    font-weight: bold;
+}
+
+.body{
+    background-color: #ededed;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 699px) {
+    #left{
+        width: 100% !important;
+        max-height: 860px;
+    min-height: 860px;
+    }
+    #right{
+        width: 55% !important;
+    }
+    .main{
+        padding: 1px 250px 30px 220px !important;
+        width: 30% !important;
+        max-height: 640px !important;
+    min-height: 600px !important;
+        position: initial !important;
+    }
+  }
+
+  @media only screen and (min-width: 700px) and (max-width: 1023px) {
+    #right{
+        width: 70% !important;
+    }
+    #left{
+        width: 30% !important;
+        max-height: 860px;
+        min-height: 860px;
+    }
+    .main{
+        max-height: 900px !important;
+        min-height: 870px !important;
+    }
+  }

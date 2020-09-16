@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  #parent {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #left {
+    /* border: 1px solid lightgray;
+    background-color: #fff;
+    width: 15%;
+    border: none;
+    margin-top: 15px;
+    max-height: 600px;
+    min-height: 600px; */
+  }
+  
+  #right {
+    border: 1px solid lightgray;
+    background-color: #ededed;;
+    width: 80%;
+    border: none;
+    margin-left: 20%;
+  }
+
+  .footer{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}

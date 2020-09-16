@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  #left {
+    border: 1px solid lightgray;
+    background-color: #fff;
+    width: 15%;
+    border: none;
+    margin-top: 15px;
+    max-height: 600px;
+    min-height: 600px;
+  }

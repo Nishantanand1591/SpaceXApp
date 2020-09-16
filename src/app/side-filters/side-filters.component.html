@@ -1,0 +1,29 @@
+<div class="main">
+
+<p class="filterLabel">Filters</p>
+<div class="btnColumn">
+    <p class="labelYear"> Launch Year</p>
+
+    <span *ngFor="let year of years;" >
+        <button routerLink="/filter" type="button" class="square_btn yearsBtn" [disabled]="true" (click)="yearSelected(year)">{{year}}</button>
+    </span>
+</div>
+
+<div class="btnColumn">
+    <p class="labelYear"> Sucessful Launch</p>
+
+    <button type="button" class="square_btn" (click)="sucessLaunch(true)">True</button>
+    <button type="button" class="square_btn" (click)="sucessLaunch(false)">False</button>
+</div>
+
+<div class="btnColumn">
+    <p class="labelYear"> Sucessful Landing</p>
+
+    <button type="button" class="square_btn landing" [disabled]="true" (click)="sucessLand(true)">True</button>
+    <button type="button" class="square_btn landing" [disabled]="true" (click)="sucessLand(false)">False</button>
+</div>
+
+
+</div>
+
+<router-outlet></router-outlet>
